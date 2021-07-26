@@ -41,15 +41,31 @@
                         </h2>
                         <br>
                         <p class="has-text-centered">
-                            <a class="button is-medium is-info is-outlined">
-                                Sign In
+                            <a class="button is-medium is-info is-outlined" onclick="signIn()">
+                                Sign In with Google
                             </a>
                         </p>
+                        <h2 class="subtitle is-4">Or</h2>
+                        <div class="field">
+                            <label class="label">Username</label>
+                            <div class="control">
+                            <input class="input is-medium" type="text" id="username">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">Password</label>
+                            <div class="control">
+                            <input class="input is-medium" type="password" id="password">
+                            </div>
+                        </div>
+                        <div class="control" onclick="signInManually()">
+                            <button class="button is-link is-fullwidth has-text-weight-medium is-medium">Login</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    
+    <script src="js/signIn.js"></script>
   </body>
 </html>
