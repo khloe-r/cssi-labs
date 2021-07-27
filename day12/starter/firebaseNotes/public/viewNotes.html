@@ -32,6 +32,16 @@
             <h1 class="title">Some of Your Greatest Ideas Started Here</h1><br>
           </div>
         </div>
+        <div class="field">
+            <label class="label">Search</label>
+            <div class="control">
+                <input class="input" id="searchBar" type="text" placeholder="enter a label here">
+            </div>
+            <div class="control">
+                <button onclick="searchLabels()" class="button is-link">Search</button>
+                <button onclick="resetSearch()" class="button is-link">Reset Search</button>
+            </div>
+        </div>
         <div id="app" class="columns is-multiline">
           <!-- Note cards will render here -->
         </div>
