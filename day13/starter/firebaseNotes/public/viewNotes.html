@@ -47,6 +47,36 @@
         </div>
       </div>
     </footer>
+
+    <div id="editNoteModal" class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+            <section class="modal-card-body">
+                <input class="input is-normal" id="editTitleInput" type="text">
+                <input class="input is-normal" id="editTextInput" type="text">
+            </section>
+            <footer class="modal-card-foot">
+                <button class="button is-success" onclick="saveEditedNote()">
+                    Save changes
+                </button>
+                <button class="button" onclick="closeEditModal()">Cancel</button>
+            </footer>
+        </div>
+    </div>
+
+    <div class="modal" id="deletePrompt">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+            <header class="modal-card-head">
+            <p class="modal-card-title">Are you sure you want to delete?</p>
+            </header>
+            <footer class="modal-card-foot">
+            <button onclick="realDelete()" class="button is-success">Yes Delete</button>
+            <button onclick="closeDeleteModal()"" class="button">Cancel</button>
+            </footer>
+        </div>
+    </div>
+
   </body>
 
 </html>
